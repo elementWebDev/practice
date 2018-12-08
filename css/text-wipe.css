@@ -1,0 +1,22 @@
+h1 span {
+    position: relative;
+    display: block;
+    width: 0;
+    min-height: 1em;
+    transition: width 3s;
+    overflow: hidden;
+}
+h1 span.open {
+    width: 100%;
+}
+
+h1 span > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: red;
+}
+h1 span.open > span.open {
+    opacity: 1;
+}
